@@ -6,12 +6,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath:
-    process.env.NODE_ENV === "production" ? "/Thanhhon-TienSy-vs-ThuHuong" : "",
-  assetPrefix:
-    process.env.NODE_ENV === "production"
-      ? "/Thanhhon-TienSy-vs-ThuHuong/"
-      : "",
+  basePath: process.env.NODE_ENV === "production" ? "" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "" : "",
   trailingSlash: true, // Ensure trailing slashes for GitHub Pages compatibility
 };
 
