@@ -2,7 +2,6 @@
 
 /* eslint-disable @next/next/no-img-element */
 
-import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { assetPath, EASE_CINEMATIC } from "@/lib/utils";
 import styles from "./HeroSection.module.css";
@@ -98,7 +97,7 @@ export default function HeroSection() {
 
         <motion.p className={styles.subtitle} variants={fadeUp}>
           Trân trọng kính mời bạn đến dự lễ
-          <span className={styles.separatorName}>Thành Hôn</span> cùng gia đình
+          <span className={styles.separatorName}>Thành Hôn</span>cùng gia đình
           chúng tôi
         </motion.p>
 

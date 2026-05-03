@@ -1,35 +1,19 @@
 "use client";
 
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { EASE_CINEMATIC } from "@/lib/utils";
 import styles from "./MusicPlayer.module.css";
+import { useMusicContext } from "@/contexts/useMusicContext";
 
 export default function MusicPlayer() {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const { isPlaying, togglePlay } = useMusicContext();
   const [isVisible, setIsVisible] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 2000);
     return () => clearTimeout(timer);
   }, []);
-
-  const togglePlay = useCallback(() => {
-    if (!audioRef.current) {
-      audioRef.current = new Audio();
-      audioRef.current.loop = true;
-      audioRef.current.volume = 0.3;
-      audioRef.current.src = "/music/wedding-music.mp3";
-    }
-
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play().catch(() => {});
-    }
-    setIsPlaying(!isPlaying);
-  }, [isPlaying]);
 
   return (
     <AnimatePresence>
