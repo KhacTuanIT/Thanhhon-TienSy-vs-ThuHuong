@@ -19,9 +19,9 @@ const events = [
       </svg>
     ),
     title: "Lễ Thành Hôn",
-    time: "11:00",
-    location: "Nhà Thờ Thánh Tâm",
-    address: "123 Đại lộ Tình Yêu, TP. Hồ Chí Minh",
+    time: "10:30 AM",
+    location: "Nhà hàng Tiệc cưới Bình An",
+    address: "Tiên Phước, Đà Nẵng, Việt Nam",
     description:
       "Kính mời bạn cùng chứng kiến khoảnh khắc chúng tôi trao lời nguyện ước trong không gian ấm cúng bên gia đình và bạn bè thân thương.",
   },

@@ -29,22 +29,22 @@ export default function MapSection() {
       >
         <div className={`${styles.mapContainer} glass-card`}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.394768!2d106.6875!3d10.7763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ2JzM0LjciTiAxMDbCsDQxJzE1LjAiRQ!5e0!3m2!1sen!2s!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.9373951897383!2d108.3093514!3d15.487799300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3169eebe1917b7ff%3A0xfbed01ebecb5d9e9!2zTmjDoCBow6BuZyBCw6xuaCBBbg!5e0!3m2!1svi!2s!4v1777986720064!5m2!1svi!2s"
             className={styles.map}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Địa điểm tổ chức lễ cưới"
-          />
+          ></iframe>
         </div>
 
         <div className={styles.venueInfo}>
-          <h3 className={styles.venueName}>Grand Lotus Ballroom</h3>
+          <h3 className={styles.venueName}>Nhà hàng Tiệc cưới Bình An</h3>
           <p className={styles.venueAddress}>
-            456 Đường Hạnh Phúc, Quận 1, TP. Hồ Chí Minh
+            Nhà hàng Bình An F8Q5+4P9, Tiên Phước, Đà Nẵng, Việt Nam
           </p>
           <a
-            href="https://maps.google.com"
+            href="https://maps.app.goo.gl/VGGRWJykFiGLhZ8BA"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.directionsLink}
