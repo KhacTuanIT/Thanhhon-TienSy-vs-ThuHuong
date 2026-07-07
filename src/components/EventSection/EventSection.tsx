@@ -19,7 +19,7 @@ const events = [
       </svg>
     ),
     title: "Lễ Thành Hôn",
-    time: "10:30 AM",
+    time: "10:00 AM",
     location: "Nhà hàng Tiệc cưới Bình An",
     address: "Tiên Phước, Đà Nẵng, Việt Nam",
     description:
